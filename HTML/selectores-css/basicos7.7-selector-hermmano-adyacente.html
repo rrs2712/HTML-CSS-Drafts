@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector Hermano Adyacente</title>
+    <style>
+        section div+p{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <!--esto no se afecta-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, dolorem.</p>
+        </div>
+        <!--esto si se afecta-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, porro?</p>
+        <div>
+            <!--esto no se afecta-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, minima!</p>
+        </div>
+        <!--esto si se afecta-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quo.</p>
+    </section>
+</body>
+</html>

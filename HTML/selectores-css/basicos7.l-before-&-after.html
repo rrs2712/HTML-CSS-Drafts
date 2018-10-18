@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores before y after</title>
+    <style>
+        div {
+            border: 2px solid blue;
+            width: 300px;
+            padding: 20px 128px;
+            margin: 10px auto;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        div h4 {
+            margin: 0 0 10px 0;
+        }
+        div p{
+            text-align: justify;
+        }
+
+        div p::before {
+            content: url("../../images/quotation-marks.png");
+            position: absolute;
+            left: 0px;
+            top: 30px;
+        }
+        div p::after {
+            content: url("../../images/quotation-marks.png");
+            position: absolute;
+            right: 0px;
+            top: 30px;
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section id="comentario">
+        <div>
+            <h4>Juan Perez dice:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur error fugit ipsam nemo perspiciatis sapiente temporibus, totam unde vero. Aut ea inventore, iure modi nisi perferendis quia quo sunt.</p>
+        </div>
+    </section>
+</body>
+</html>

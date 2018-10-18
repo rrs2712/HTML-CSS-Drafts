@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores empty & not</title>
+    <style>
+        table td{
+            background: lightblue;
+        }
+        table td:empty{
+            background: lightgray;
+        }
+
+        section :not(article){
+            border: 2px solid black;
+        }
+
+        input:not([type="submit"]){
+            background: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td>Columna 2</td>
+            <td>Columna 3</td>
+        </tr>
+        <tr>
+            <td>Columna 1</td>
+            <td></td>
+            <td>Columna 3</td>
+        </tr>
+        <tr>
+            <td>Columna 1</td>
+            <td>Columna 2</td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <section>
+        <div>Soy un div</div>
+        <article>Soy un article</article>
+        <span>Soy un span</span>
+    </section>
+    <br>
+    <br>
+    <form action="">
+        <input type="text" placeholder="nombre">
+        <input type="email" placeholder="correo">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

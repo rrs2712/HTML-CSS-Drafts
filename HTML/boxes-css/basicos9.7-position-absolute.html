@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position Absolute</title>
+    <style>
+        body{
+            font-size: 16px;
+        }
+        section{
+            margin: 5% auto;
+            width: 200px;
+            background: saddlebrown;
+            text-align: center;
+            position: relative;
+            border: 1px solid black;
+        }
+        section img{
+            width: 128px;
+        }
+        p{
+            background: ghostwhite;
+            padding: .5em 0em;
+        }
+        span{
+            font-size: 2em;
+            color: ghostwhite;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            opacity: .75;
+            padding: 0em .5em;
+        }
+        #logo{
+            width: 8em;
+            position: absolute;
+            right: 0em;
+            bottom: 0em;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="../../images/mushroom.png" alt="mushroom">
+        <p>Oferton en Hongos</p>
+        <span>-50%</span>
+    </section>
+    <img id="logo" src="../../images/la-boqueria.png" alt="la-boqueria">
+</body>
+</html>

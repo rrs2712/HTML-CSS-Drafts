@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fondos y sus atributos</title>
+    <style>
+        body {
+            background-image: url("../../images/mushroom-market.jpg");
+            background-attachment: fixed;
+            background-size: 1024px auto;
+        }
+
+        div {
+            border: 2px solid red;
+            margin: 10px auto;
+            width: 512px;
+            height: 512px;
+        }
+
+        p {
+            text-align: center;
+            background-color: black;
+            color: yellow;
+            font-size: 24px;
+            margin: 10px auto 200px;
+        }
+
+        #a {
+            background-color: darkred;
+        }
+
+        #b {
+            background-image: url("../../images/calendar-and-weather.jpg");
+        }
+
+        #c {
+            background-image: url("../../images/calendar-and-weather.jpg");
+            background-repeat: no-repeat;
+        }
+
+        #d {
+            background-image: url("../../images/calendar-and-weather.jpg");
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+        #e {
+            background-image: url("../../images/calendar-and-weather.jpg");
+            background-repeat: no-repeat;
+            background-size: 50% 75%;
+        }
+        #f {
+            background-image: url("../../images/calendar-and-weather.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        #g {
+            background-image: url("../../images/mushroom-market.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right bottom;
+        }
+        #h{
+            background:
+                    url("../../images/la-boqueria.png") no-repeat left top / 50% auto,
+                    url("../../images/mushroom.png") no-repeat right bottom / auto,
+                    url("../../images/mushroom-market.jpg") no-repeat center center / 510px auto rgba(164,101,37,.5);
+        }
+        #i {
+            background-image: url("../../images/calendar-and-weather.jpg");
+            background-repeat: repeat-x;
+            background-size: 75% 75%;
+            background-position: center center;
+
+            border: 20px dashed lightgreen;
+            background-clip: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <p>Este es un div con background-color</p>
+    <div id="b"></div>
+    <p>Este es un div con background-image</p>
+    <div id="c"></div>
+    <p>Este es un div con imagen sin repetir</p>
+    <div id="d"></div>
+    <p>Este es un div con imagen sin repetir a la derecha y fondo</p>
+    <div id="e"></div>
+    <p>Este es un div con imagen de tamaño proporcional al contenedor en 50% 75%</p>
+    <div id="f"></div>
+    <p>Este es un div con imagen de tamaño contain (escalado)</p>
+    <div id="g"></div>
+    <p>Este div escala una imagen sin deformarla aunque la tenga que recortar para adaptarla al navegador</p>
+    <div id="h"></div>
+    <p>Esta div utiliza el short-hand de backgroung para definir 3 imagenes con diferentes propiedades</p>
+    <div id="i"></div>
+    <p>Este div sirve para mostrar el background attachment</p>
+</body>
+</html>

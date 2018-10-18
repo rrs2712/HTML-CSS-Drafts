@@ -1,0 +1,7 @@
+div{
+    border: 2px solid red; /*esta propiedad no se hereda por default*/
+    color: red; /*esta propiedad si se hereda por default*/
+}
+ul{
+    border: inherit; /*con esto forzamos a heredar del padre*/
+}

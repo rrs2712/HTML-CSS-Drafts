@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Basicos 2.2</title>
+
+    <meta name="author" content="Raul RS">
+    <meta name="description" content="caracteres especiales">
+    <meta name="keywords" content="characters">
+</head>
+<body>
+<h1>En este documento:</h1>
+
+<h2>Caracteres especiales</h2>
+<p>Estrutura de los caracteres especiales en codigo:
+"&" + name + ";" i.e. &ntilde; equivale a ñ</p>
+
+<!--a[href=https://dev.w3.org/html5/html-author/charref]{Listado de caracteres especiales} generates:-->
+<a href="https://dev.w3.org/html5/html-author/charref">Listado de caracteres especiales</a>
+
+<br>
+Agregando simbolos que pertenecen a HTML, i.e. <p> equivale a &lt;p&gt;
+
+    <br><br>
+En la siguiente liga podemos encontrar una <a href="https://dev.w3.org/html5/html-author/charref">lista con los codigos
+        oficiales de caracteres especiales</a>
+
+
+<h2>Etiqueta abbr (Abreviaturas)</h2>
+<p>
+    <!--<abbr title=""></abbr> tag (para abreviaturas) i.e.-->
+    <br>
+    <abbr title="Secretaria de Gobierno">SEGOB</abbr>
+</p>
+
+<h2>Etiqueta time</h2>
+<p>
+    UK vs MX es el <time datetime="2018-04-27T00:37Z" title="2018-04-27T00:37Z">viernes</time>
+
+
+</p>
+<h2>Etiquetas figure y figcaption</h2>
+<p>
+    figure y figcaption asocian una imagen a una descripcion.
+    figure abarca mas que immagenes, por ejemplo videos y esta compuesto por
+    <ul>
+        <li>su contenido</li>
+        <li>su figcaption (es opcional y debe ir al principio o al  final de figure pero no en su contenido</li>
+    </ul>
+
+    Un ejemplo: <img src="logo.png" alt="a text"> tag (no tiene tag de cierre y esos son sus 2 atributos obligatorios)
+    <ul>
+        <li>src significa source</li>
+        <li>alt	significa alternative (texto que se mostrara si por algun motivo no se puede mostrar la imagen)</li>
+    </ul>
+
+<h2>Etiqueta cite</h2>
+<p>
+    Sirve para dar el credito apropiado al autor de una obra i.e.
+    Donald Trump llamo terroristas a los mulsumanes en su cuenta de <cite lang="en">twitter</cite>.
+    <br><br>
+    En el caso anterior la cuenta de D. Trump esta en ingles y por tanto la cita tiene como atributo lang="en", para ver un listado de todos los idiomas disponibles podemos dar un vistazo a la
+    <a href="https://www.w3schools.com/tags/ref_language_codes.asp">documentacion oficial de idioma</a>
+</p>
+<h2>Etiquetas q y blockquote</h2>
+    La banda Tierra Sagrada causo indignacion por este parrafo de su cancion <q>La Buena y La Mala</q>:
+    <blockquote>
+        Es un dilema, es un problema lo sé y lo sostengo
+        <br>Y no está en mis manos ser enamorado
+        <br>Ser un poco cursi pero acelerado
+        <br>Un ángel de día un demonio de noche
+        <br>Y si hay que decidir…
+        <br>Miren plebes no quiero ser sin vergüenza pero si hay que decir; lo legal…
+        <br>Una en el día y la otra en la noche
+        <footer>
+            Banda Tierra Sagrada - La Buena y La Mala
+        </footer>
+    </blockquote>
+
+<figure>
+    <blockquote>
+        Es un dilema, es un problema lo sé y lo sostengo
+        <br>Y no está en mis manos ser enamorado
+        <br>Ser un poco cursi pero acelerado
+        <br>Un ángel de día un demonio de noche
+        <br>Y si hay que decidir…
+        <br>Miren plebes no quiero ser sin vergüenza pero si hay que decir; lo legal…
+        <br>Una en el día y la otra en la noche
+    </blockquote>
+    <figcaption>
+        Banda Tierra Sagrada - La Buena y La Mala
+    </figcaption>
+</figure>
+
+<h2>Etiqueta span</h2>
+El mar es <span style="color:blue; font-size: large;">azul y enorme</span>
+<h2>Etiqueta small</h2>
+En el contexto semantico sirve para la letras chiquitas, como en :
+<ul>
+    <li>los contratos</li>
+    <li>footer tag</li>
+    <li>descargo de responsabilidades</li>
+</ul>
+
+<h2>Etiqueta meter</h2>
+Sirve para incluir un medidor con un minimo y un maximo, pero no todos los browsers soportan esta etiqueta. La pagina <a
+        href="https://caniuse.com">CaniUse</a> nos ayuda a verificar que etiquetas son soportadas por los browsers mas populares. Ejemplo de meter:
+<br><br>
+Temperaturas:
+<br> Mexico <meter min="0" max="40" low="10" high="40" optimum="20" value="20">20°C </meter>
+<br> Alaska <meter min="0" max="40" low="10" high="40" optimum="20" value="-20">-20°C </meter>
+<br> Sahara <meter min="0" max="40" low="10" high="40" optimum="20" value="52">52°C </meter>
+
+<h2>Etiqueta Progress</h2>
+<p>La etiqueta progress esz como meter pero con menos atributos, he aqui un ejemplo:</p>
+<br>
+Descargar pelicula:
+<progress value="0" max="100" id="peli"></progress>
+<input type="button" value="Empezar descarga" onclick="setInterval('descargar()',500)" >
+
+<script>
+    function descargar() {
+        var elemento = document.getElementById("peli");
+            elemento.value+=5;
+    }
+</script>
+
+
+
+</body>
+</html>

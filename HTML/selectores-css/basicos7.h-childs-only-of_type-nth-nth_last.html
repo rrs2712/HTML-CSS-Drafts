@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores first & last child</title>
+    <style>
+        section p i:only-child {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        section p em:only-of-type{
+            color: red;
+        }
+
+        ol li:nth-child(3){
+            color: red;
+        }
+        ol li:nth-child(odd){
+            background: lightgreen;
+        }
+        ol li:nth-child(even){
+            background: lightpink;
+        }
+        ol li:nth-child(5n+5){
+            font-size: 30px;
+        }
+        ul li:nth-last-child(2){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>
+            <i>L</i>orem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aliquid consectetur eos est facilis molestias neque nobis nulla obcaecati, perspiciatis porro quae rem similique soluta suscipit, tempora ut, veritatis.
+        </p>
+        <p>
+            <i>A</i>ccusantium corporis <em>harum</em> illo ipsam magnam minima omnis! Aliquam aliquid animi aut error facilis ipsa ipsum laudantium magni molestias nesciunt nostrum possimus, provident quo recusandae repellendus sunt tenetur ullam veritatis?
+        </p>
+        <p>
+            <i>A</i>b, aperiam <em>architecto</em> aspernatur <em>autem</em> consectetur consequuntur cum, dicta dolore earum enim fuga illum iure maiores minus molestias necessitatibus nihil numquam omnis placeat provident quisquam quo veritatis vero, voluptatem voluptatum?
+        </p>
+    </section>
+    <ol>
+        <li>Elemento 01</li>
+        <li>Elemento 02</li>
+        <li>Elemento 03</li>
+        <li>Elemento 04</li>
+        <li>Elemento 05</li>
+        <li>Elemento 06</li>
+        <li>Elemento 07</li>
+        <li>Elemento 08</li>
+        <li>Elemento 09</li>
+        <li>Elemento 10</li>
+        <li>Elemento 11</li>
+        <li>Elemento 12</li>
+        <li>Elemento 13</li>
+        <li>Elemento 14</li>
+        <li>Elemento 15</li>
+    </ol>
+    <ul>
+        <li>elemento 01</li>
+        <li>elemento 02</li>
+        <li>elemento 03</li>
+        <li>elemento 04</li>
+        <li>elemento 05</li>
+    </ul>
+</body>
+</html>

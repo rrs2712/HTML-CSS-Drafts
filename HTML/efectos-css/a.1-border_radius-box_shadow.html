@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bordes Redondeados</title>
+    <style>
+        .cajaCircular{
+            background: url("../../images/interjet/cancun.jpg") no-repeat center center / cover;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            /* limita el bg al area del contenido, es decir, sin incluir el espacio del padding y border*/
+            /* background-clip: content-box; */
+            border-radius: 50%;
+            padding: 10px;
+            border: 4px solid blue;
+            box-sizing: border-box; /*hace que el tag se del tamaño definido en el width contemplando content, padding y border*/
+        }
+        .sombra{
+            box-shadow: 5px 5px 10px 5px #4bb0f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="cajaCircular sombra"></div>
+</body>
+</html>

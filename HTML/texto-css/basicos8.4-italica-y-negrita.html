@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Italica y negrita</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS";
+        }
+        p{
+            font-style: italic;
+        }
+        div{
+            font-weight: bold;
+        }
+        p span, div span{
+            content: " ";
+            font-style: normal;
+            font-weight: normal;
+            color: darkred;
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.<span>Lorem ipsum dolor sit amet.</span></p>
+    <div>Cum magnam molestias quia quibusdam!<span>Cupiditate facere sapiente sed ut.</span></div>
+</body>
+</html>

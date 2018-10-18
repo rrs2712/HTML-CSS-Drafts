@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector de atributos que comienzan o terminan con </title>
+    <style>
+        a{
+            color: ghostwhite;
+        }
+        a[href^="http://"]{
+            background: rebeccapurple;
+        }
+        a[href$=".org"]{
+            background: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.google.com">Enlace a Google</a>
+    <br>
+    <a href="http://www.yahoo.com">Enlace a yahoo</a>
+    <br>
+    <a href="#change.org">Enlace a change.org</a>
+    <br>
+    <a href="https://www.apache.org">Enlace a apache.org</a>
+    <br>
+</body>
+</html>

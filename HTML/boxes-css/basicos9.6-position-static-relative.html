@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display & Visibility</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .contenedor {
+            font-size: 3em;
+            text-align: right;
+            background: lightgray;
+            width: 80%;
+            margin: 0% auto;
+        }
+
+        .contenedor div {
+             width: 20%;
+             border: 1px solid black;
+         }
+        .contenedor div:hover {
+            position: relative;
+            right: .5em;
+        }
+
+        .a {
+            background: lightgreen;
+        }
+
+        .b {
+            background: ghostwhite;
+        }
+
+        .c {
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h2></h2>
+    <div class="contenedor">
+        <div class="a">Caja 1</div>
+        <div class="b">Caja 2</div>
+        <div class="c">Caja 3</div>
+    </div>
+</body>
+</html>

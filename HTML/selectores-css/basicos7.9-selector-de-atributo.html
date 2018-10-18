@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector de Atributo</title>
+    <style>
+        p[id]{
+            color:deeppink;
+        }
+        p[id][title]{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>parrafo 01</p>
+    <p id="dos">parrafo 02</p> <!--lo afecta el rosa-->
+    <p id="tres" title="tres">parrafo 03</p> <!--lo afecta el azul-->
+    <p id="cuatro" class="enorme">parrafo 04</p> <!--lo afecta el rosa-->
+</body>
+</html>

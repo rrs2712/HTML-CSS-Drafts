@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector de pseudo-clases hover, active & focus</title>
+    <style>
+        input[type="submit"]{
+            color: purple;
+        }
+        input[type="submit"]:hover{
+            font-size: larger;
+        }
+        input[type="submit"]:active{
+            background: deeppink;
+        }
+        input[type]:focus{
+            border: 5px darkred dashed;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="email" name="email" id="email" autofocus>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

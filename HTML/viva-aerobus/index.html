@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitio Oficial de VivaAerobus | Lo que necesitas para volar</title>
+    <base href="../../images/viva-aerobus/">
+    <link rel="stylesheet" href="../../CSS/viva-aerobus.css">
+</head>
+<body>
+
+    <header>
+        <div class="columna-central">
+            <table class="header-table">
+                <tr>
+                    <td rowspan="2"><img src="viva-logo.png" alt="viva-aerobus-logo" class="logo"></td>
+                    <td>
+                        <figure class="login-box">
+                            <figcaption>Iniciar Sesión</figcaption>
+                            <img src="ic-inicio-sesion.gif" alt="inicio sesion">
+                        </figure>
+                    </td>
+                    <td>
+                        <div class="header-social">
+                            <img src="ic-header-facebook.png" alt="facebook">
+                            <img src="ic-header-twitter.png" alt="twitter">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="header-language">
+                            <img src="ic-mx-flag.png" alt="mexico">
+                            <img src="ic-us-flag.png" alt="united-states">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <strong class="box-almost-rounded atencion-cliente">Atención a Clientes</strong>
+                    </td>
+                </tr>
+            </table>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="#">Lo que necesitas para divertirte</a></li>
+                    <li><a href="#">destinos</a></li>
+                    <li><a href="#">promociones</a></li>
+                    <li><a href="#">mi vuelo</a></li>
+                    <li><a href="#">volar con nosotros</a></li>
+                    <li><a href="#">autos & hoteles</a></li>
+                    <li><a href="#">grupos & charters</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="forms">
+        <div class="columna-central">
+            <table id="forms-container">
+                <tr>
+                    <td>
+                        <ul class="form-tab-list">
+                            <li>
+                                <!--<div class="arrow-right"></div>-->
+                                <figure class="tab-form-selected">
+                                    <img src="ic-find-flight.png" alt="buscar vuelos">
+                                    <figcaption>BUSCAR VUELOS</figcaption>
+                                </figure>
+
+                            </li>
+                            <li>
+                                <figure class="tab-form-normal"><img src="ic-flight-hotel.png" alt="vuelo hotel">
+                                    <figcaption>VUELO + HOTEL</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="tab-form-normal"><img src="ic-checkin.png" alt="check-in">
+                                    <figcaption>MI VUELO + CHECK-IN</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="tab-form-normal"><img src="ic-flight-bus.png" alt="vuelo autobus">
+                                    <figcaption>VUELO + AUTOBUSES</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <form action="find-flight" class="find-flight">
+                            <div class="div-radio-buttons">
+                                <div id="sencillo">
+                                    <input type="radio" name="flight-kind" id="single">
+                                    <label for="single">SENCILLO</label>
+                                </div>
+                                <div id="redondo">
+                                    <input type="radio" name="flight-kind" id="round" checked>
+                                    <label for="round">REDONDO</label>
+                                </div>
+
+                            </div>
+                            <div id="from-to">
+                                <label for="from">ORIGEN </label><input type="text" id="from" value="CIUDAD DE MEXICO - TER...">
+                                <label for="to">DESTINO</label><input type="text" id="to" value="CANCUN - TERMINAL 2">
+                            </div>
+                            <table id="combos-persona">
+                                <tr>
+                                    <td>
+                                        <label for="adults">
+                                            <span>ADULTOS</span>
+                                            <br>
+                                            <small>.</small>
+                                        </label>
+                                        <select name="adults" id="adults">
+                                            <option value="1">1</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <label for="kids">
+                                            <span>NIÑOS</span>
+                                            <br>
+                                            <small>MENORES DE 14</small>
+                                        </label>
+                                        <select name="kids" id="kids">
+                                            <option value="0">0</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <label for="babies">
+                                            <span>INFANTES</span>
+                                            <br>
+                                            <small>MENORES DE 2</small>
+                                        </label>
+                                        <select name="babies" id="babies">
+                                            <option value="0">0</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form> <!--form find-flight-->
+                    </td>
+                    <td class="td-form-calendar">
+                        <form action="calendar" id="calendar">
+                            <table id="table-form-calendar">
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="is-calendar" id="is-calendar">
+                                        <label for="is-calendar">VER CALENDARIO</label>
+                                    </td>
+                                </tr>
+                                <tr id="table-form-calendar-row2">
+                                    <td>
+                                        <label for="salida">SALIDA</label>
+                                        <input type="text" id="salida">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="regreso">REGRESO</label><input type="text" id="regreso">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form> <!--form calendar-->
+                    </td>
+                    <td>
+                        <form action="currency" id="currency">
+                            <table id="table-currency">
+                                <tr id="table-currency-row1">
+                                    <td>
+                                        <input type="radio" name="moneda" id="mxn">
+                                        <label for="mxn">MXN</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="moneda" id="usd">
+                                        <label for="usd">USD</label>
+                                    </td>
+                                </tr>
+                                <tr id="table-currency-row2">
+                                    <td colspan="2">
+                                        <input type="text" name="viva" id="viva" value="VIVA">
+                                    </td>
+                                </tr>
+                                <tr id="table-currency-row3">
+                                    <td colspan="2">
+                                        <input type="submit" value="BUSCAR >">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form> <!--form currency-->
+                    </td>
+                </tr>
+            </table>
+        </div> <!--columna-central-->
+    </section> <!--forms-->
+
+    <main>
+        <div class="columna-central">
+            <table id="table-main">
+                <tr>
+                    <td>
+                        <section class="section-banner">
+                            <img src="nosotros-te-llevamos.png" alt="nosotros te llevamos">
+                        </section>
+                    </td>
+                    <td>
+                        <section class="section-precios">
+                            <h3>Aprovecha nuestros precios</h3>
+                            <strong>Ver todos</strong>
+                            <ul>
+                                <li><span>CD. DE MEXICO-TUXTLA GTZ</span><span class="price-highlight">$778</span></li>
+                                <li><span>CD. DE MEXICO-IXTAPA ZIHU</span><span class="price-highlight">$578</span></li>
+                                <li><span>CD. DE MEXICO-MONTERREY</span><span class="price-highlight">$728</span></li>
+                                <li><span>CD. DE MEXICO- GUADALAJARA</span><span class="price-highlight">$638</span></li>
+                                <li><span>CD. DE MEXICO-TIJUANA</span><span class="price-highlight">$978</span></li>
+                                <li><span>CD. DE MEXICO-TORREON</span><span class="price-highlight">$878</span></li>
+                                <li><span>CD. DE MEXICO-VILLAHERMO...</span><span class="price-highlight">$708</span></li>
+                                <li><span>CD. DE MEXICO-REYNOSA</span><span class="price-highlight">$1108</span></li>
+                            </ul>
+                        </section>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <section class="section-random4">
+                            <img src="aprovecha-las-mejores-promociones.png" alt="promociones">
+                            <img src="mascotas-tambien-vuelan.png" alt="mascotas">
+                            <img src="conoce-nuestras-tarifas.png" alt="tarifas">
+                            <img src="aviso-importante.png" alt="aviso">
+                        </section>
+                    </td>
+                    <td>
+                        <section class="section-random4">
+                            <img src="viva-autos.png" alt="autos">
+                            <img src="viva-paquetes.png" alt="paquetes">
+                            <img src="viva-transfers.png" alt="transfers">
+                            <img src="viva-hoteles.png" alt="hoteles">
+                        </section>
+                    </td>
+                </tr>
+            </table>
+        </div> <!--columna-central-->
+    </main>
+
+    <footer>
+        <div class="columna-central">
+            <table id="table-footer">
+                <tr>
+                    <td>
+                        <div class="footer-social">
+                            <figure><img src="ic-footer-facebook.png" alt="facebook">
+                                <figcaption>VIVAAEROBUS</figcaption>
+                            </figure>
+                            <figure><img src="ic-footer-twitter.png" alt="twitter">
+                                <figcaption>@VIVAAEROBUS</figcaption>
+                            </figure>
+                            <figure><img src="ic-footer-mail.png" alt="mail">
+                                <figcaption>PROMOS POR EMAIL</figcaption>
+                            </figure>
+                        </div> <!--footer-social-->
+                    </td>
+                    <td>
+                        <div class="agencias">
+                            <h4 class="footer-title">ACCESO A VIVAAGENCIAS</h4>
+                            <span class="box-almost-rounded">REGISTRO DE VIVAAGENCIAS</span>
+                            <span class="box-almost-rounded">ACCESO VIVAAGENCIAS</span>
+                        </div> <!--agencias-->
+                    </td>
+                    <td>
+                        <article class="footer-column">
+                            <h4 class="footer-title">SOBRE VIVAAEROBUS</h4>
+                            <ul>
+                                <li>QUIENES SOMOS</li>
+                                <li>NUESTROS DESTINOS</li>
+                                <li>CONTACTANOS</li>
+                                <li>VIAJA+</li>
+                            </ul>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="footer-column">
+                            <h4 class="footer-title">SERVICIO AL CLIENTE</h4>
+                            <UL>
+                                <LI>GARANTIA DE PRECIO</LI>
+                                <LI>GARANTIA CONTESTA</LI>
+                                <LI>FACTURACION ELECTRONICA</LI>
+                            </UL>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="footer-column">
+                            <h4 class="footer-title">CORPORATIVA</h4>
+                            <UL>
+                                <LI>INFORMACION LEGAL</LI>
+                                <LI>AVISO DE PRIVACIDAD</LI>
+                                <LI>SALA DE PRENSA</LI>
+                                <LI>TRABAJA EN VIVAAEROBUS</LI>
+                            </UL>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="footer-column">
+                            <h4 class="footer-title">PASAJEROS DE EUA</h4>
+                            <UL>
+                                <LI>NUESTROS CARGOS</LI>
+                                <LI>DEMORAS EN RODAJES</LI>
+                                <LI>PLAN DE SERVICIO AL CLIENTE</LI>
+                            </UL>
+                        </article>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
+
+            <small>VIVAAEROBUS</small>
+            <small>LO QUE NECESITAS PARA VOLAR.LOS MEJORES PRECIOS, OFERTAS, PROMOCIONES Y DESCUENTOS.</small>
+            <img src="ezy-navitaire.png" alt="ezy">
+        </div> <!--columna-central-->
+    </footer>
+
+</body>
+</html>

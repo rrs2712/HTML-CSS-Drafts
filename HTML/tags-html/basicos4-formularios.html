@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body>
+<div>
+    <form action="" method="get">
+        <p>
+            <label for="nombre">Escriba su nombre</label>
+            <input type="text" id="nombre">
+        </p>
+        <!--
+        p>label[for="pass"]{Escriba su pass:}+input[type="password" id="pass"]
+        -->
+        <p>
+            <label for="pass">Escriba su pass:</label>
+            <input type="password" id="pass">
+        </p>
+        <!--
+        p>(input[id type="radio" name="gender" value]+label[for]+br)*2
+        -->
+        <p><input type="radio" id="genero-male" name="gender" value="male"><label
+                for="genero-male">Male</label>
+            <br>
+            <input
+                    type="radio"
+                    id="genero-female"
+                    name="gender"
+                    value="female" checked><label
+                    for="genero-female">female</label>
+            <br>
+        </p>
+        <!--
+        This is good:
+        p>(input[id type="checkbox" name="dias" value]+label[for]+br)*7
+        But this is better:
+        p>(input:c[id=d$ name=dias value]+label[for=d$]+br)*7
+        -->
+        <p>
+            <input type="checkbox" name="dias" id="d1" value="lunes" checked><label for="d1">lunes</label>
+            <br>
+            <input type="checkbox" name="dias" id="d2" value="martes" checked><label for="d2">martes</label>
+            <br>
+            <input type="checkbox" name="dias" id="d3" value="miercoles"><label for="d3">miercoles</label>
+            <br>
+            <input type="checkbox" name="dias" id="d4" value="jueves"><label for="d4">jueves</label>
+            <br>
+            <input type="checkbox" name="dias" id="d5" value="viernes"><label for="d5">viernes</label>
+            <br>
+            <input type="checkbox" name="dias" id="d6" value="sabado"><label for="d6">sabado</label>
+            <br>
+            <input type="checkbox" name="dias" id="d7" value="domingo"><label for="d7">domingo</label>
+            <br>
+        </p>
+        <!--
+        p>(label[for=mail]{Mail:}+br+input:email[id=mail name=correo]+br)
+        -->
+        <p><label for="mail">Mail:</label>
+            <br>
+            <input type="email" name="correo" id="mail">
+            <br>
+        </p>
+        <!--
+        p>label+br+input:url+br
+        -->
+        <p><label for="liga">Liga:</label>
+            <br>
+            <input type="url" name="liga" id="liga" placeholder="http//:www.tusitio.com">
+            <br>
+        </p>
+        <!--
+        p>label+br+input:tel+br
+        -->
+        <p><label for="tel">Telefono:</label>
+            <br>
+            <input type="tel" name="tel" id="tel">
+            <br>
+        </p>
+        <!--
+        p>label+br+input:search+br
+        -->
+        <p><label for="search">Buscar:</label>
+            <br>
+            <input type="search" name="search" id="search">
+        </p>
+        <!--
+        p>br+label+br+input:number+br
+        -->
+        <p>
+            <br>
+            <label for="number">Numero par de 10 a 20</label>
+            <br>
+            <input type="number" name="number" id="number" min="10" max="20" step="2">
+            <br>
+        </p>
+
+        <p><label for="range">Rango de 0 a 35</label>
+            <br>
+            <input type="range" name="range" id="range" max="35">
+            <br>
+        </p>
+        <!--
+        p>br+label+input:date+br+label+br+input:time+br+label+br+input:color+br
+        -->
+        <p>
+            <br>
+            <label for="date">Fecha:</label><input type="date" name="date" id="date">
+            <br>
+            <label for="time">Hora:</label>
+            <br>
+            <input type="time" name="time" id="time">
+            <br>
+            <label for="color">Color:</label>
+            <br>
+            <input type="color" name="color" id="color">
+            <br>
+        </p>
+        <!--
+        p>label+br+textarea
+        -->
+        <p><label for="t-area">Comentarios:</label>
+            <br>
+            <textarea name="t-area" id="t-area" cols="10" rows="2">Esto puede ser mucho texto </textarea>
+        </p>
+        <!--
+        p>br+label+select>option*3^br
+        -->
+        <p>
+            <br>
+            <label for="estado-civil">Estado Civil:</label>
+            <select name="estado-civil" id="estado-civil">
+                <option value="s">Soltero</option>
+                <option value="c">Casado</option>
+                <option value="v">Viudo</option>
+            </select>
+            <br>
+        </p>
+        <!--
+        p>br+label+select>optgroup[label]*2>option[value=$$]*2
+        -->
+        <p>
+            <br>
+            <label for="regalo">Escoge un regalo</label>
+            <select name="regalo" id="regalo">
+                <optgroup label="Camisa">
+                    <option value="11">Blanca</option>
+                    <option value="12">Negra</option>
+                </optgroup>
+                <optgroup label="Camiseta">
+                    <option value="21">Blanca</option>
+                    <option value="22">Negra</option>
+                </optgroup>
+            </select>
+        </p>
+        <!--
+        p>input:s+input:reset
+        -->
+        <p><input type="submit" value="Enviar"><input type="reset" value="Borrar datos"></p>
+
+    </form>
+</div>
+
+
+</body>
+</html>

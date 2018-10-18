@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores enabled, disabled, & checked</title>
+    <style>
+        form input:enabled:not([type="submit"]) {
+            background: lightgreen;
+        }
+
+        form input[type="submit"]:disabled {
+            border: 2px solid red;
+        }
+
+        form input[type="checkbox"]:checked + label{
+            color: whitesmoke;
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="nombre">
+        <input type="email" placeholder="user@domain.com">
+        <p>
+            <input type="checkbox" name="condicion" id="condicion">
+            <label for="condicion">Acepto los terminos y condiciones</label>
+        </p>
+        <input type="submit" disabled>
+    </form>
+</body>
+</html>

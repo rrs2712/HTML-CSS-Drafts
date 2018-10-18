@@ -1,0 +1,17 @@
+p{
+    background: aliceblue;
+}
+
+.sipnosis{
+    font-size: larger;
+    font-style: italic;
+    background: greenyellow;
+}
+
+.error{
+    color: red;
+}
+
+.enorme{
+    font-size: xx-large;
+}

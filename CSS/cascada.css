@@ -1,0 +1,33 @@
+
+/*IMPORTANCIA INI
+..............................*/
+p{
+    color: blue !important;
+}
+
+span p{ /*esta es una forma de definir especificidad, en este caso los parrafos dentro del body*/
+    color: deeppink;
+}
+/*IMPORTANCIA FIN*/
+
+/*ESPECIFICIDAD INI*/
+/*cuando ambas reglas tienen el mismo nivel de importancia*/
+li{
+    font-size: xx-small !important;
+}
+
+ol li{
+    font-size: large !important;
+}
+/*ESPECIFICIDAD FIN*/
+
+/*EL ORDEN INI*/
+/*cuando la regla tiene la misma propiedad se toma la ultima, como en el caso de border*/
+body div span{
+    border: 5px greenyellow solid;
+    color: lightpink;
+    background: black;
+    font-size: large;
+    /*border: 5px lightpink dot-dash;*/
+}
+/*EL ORDEN FIN*/

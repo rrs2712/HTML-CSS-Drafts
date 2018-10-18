@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tamaño de las cajas</title>
+    <style>
+        .ruler{
+            margin: 0px;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            padding: 0px;
+            display: inline-block;
+            text-align: center;
+        }
+        .margen{
+            background: white;
+        }
+        .borde{
+            background: lightpink;
+        }
+        .relleno{
+            background: white;
+        }
+        .contenido{
+            background: lightblue;
+        }
+        .normal-box{
+            margin: 0px 100px 20px;
+            border: 100px solid lightpink;
+            border-top: 0px;
+            border-bottom: 0px;
+            padding: 0px 100px 0px 100px;
+            background: lightblue;
+            width: 700px;
+            text-align: justify;
+        }
+        .sized{
+            box-sizing: border-box;
+        }
+        nav ul{
+            display: inline-block;
+            width: 20%;
+            background: lightblue;
+            border: 1px solid gray;
+            box-sizing: border-box;
+        }
+        .fix_inline-block_spaces{
+            margin-right: -4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h5>Con width a 700px</h5>
+    <section>
+        <div class="ruler margen" style="width: 99px">Margin<br>100px</div><div class="ruler borde" style="width: 99px">Border<br>100px</div><div class="ruler relleno" style="width: 99px">Padding<br>100px</div><div class="ruler contenido" style="width: 699px">Content<br>700px</div><div class="ruler relleno" style="width: 99px">Padding<br>100px</div><div class="ruler borde" style="width: 99px">Border<br>100px</div><div class="ruler margen" style="width: 99px">Margin<br>100px</div>
+    </section>
+    <div class="normal-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid aut eius expedita, fugiat libero magnam nostrum optio porro quaerat soluta? Ducimus excepturi exercitationem magni maxime minus quibusdam quos similique voluptas. Accusamus alias animi, aperiam, commodi doloribus ea eos eum impedit ipsam minus nam neque odit, quidem quisquam soluta! Accusamus accusantium animi architecto, autem commodi consequatur corporis deleniti dignissimos doloribus ea eius est facere hic id in incidunt ipsa itaque laborum libero maxime minima necessitatibus nesciunt pariatur possimus provident, recusandae rerum saepe sapiente sed similique tenetur totam unde, veritatis vitae voluptas voluptates voluptatum! Ad cumque impedit non quos repellendus.</div>
+
+    <h5>Con width a 700px & border-box</h5>
+    <section>
+        <div class="ruler margen" style="width: 99px">Margin<br>100px</div><div class="ruler borde" style="width: 99px">Border<br>100px</div><div class="ruler relleno" style="width: 99px">Padding<br>100px</div><div class="ruler contenido" style="width: 299px">Content<br>300px</div><div class="ruler relleno" style="width: 99px">Padding<br>100px</div><div class="ruler borde" style="width: 99px">Border<br>100px</div><div class="ruler margen" style="width: 99px">Margin<br>100px</div>
+    </section>
+    <div class="normal-box sized">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid aut eius expedita, fugiat libero magnam nostrum optio porro quaerat soluta? Ducimus excepturi exercitationem magni maxime minus quibusdam quos similique voluptas. Accusamus alias animi, aperiam, commodi doloribus ea eos eum impedit ipsam minus nam neque odit, quidem quisquam soluta! Accusamus accusantium animi architecto, autem commodi consequatur corporis deleniti dignissimos doloribus ea eius est facere hic id in incidunt ipsa itaque laborum libero maxime minima necessitatibus nesciunt pariatur possimus provident, recusandae rerum saepe sapiente sed similique tenetur totam unde, veritatis vitae voluptas voluptates voluptatum! Ad cumque impedit non quos repellendus.</div>
+
+    <h4>Fighting the space between inline-block elements</h4>
+    <h5>esto:</h5>
+    <nav>
+        <ul>Elemento 1</ul>
+        <ul>Elemento 2</ul>
+        <ul>Elemento 3</ul>
+        <ul>Elemento 4</ul>
+        <ul>Elemento 5</ul>
+    </nav>
+    <h5>Equivale a esto. la diferencia es el margin-right de -4px</h5>
+    <nav>
+        <ul class="fix_inline-block_spaces">Elemento 1</ul>
+        <ul class="fix_inline-block_spaces">Elemento 2</ul>
+        <ul class="fix_inline-block_spaces">Elemento 3</ul>
+        <ul class="fix_inline-block_spaces">Elemento 4</ul>
+        <ul class="fix_inline-block_spaces">Elemento 5</ul>
+    </nav>
+
+
+</body>
+</html>

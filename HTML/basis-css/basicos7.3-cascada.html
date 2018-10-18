@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hojas en cascada</title>
+    <link rel="stylesheet" href="../../CSS/cascada.css">
+    <!--con esto sobre escribimos la regla CSS y por el criterio de orden esta es la que se va a aplicar-->
+    <style>
+        body div span{
+            border: 5px lightpink dotted;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Parrafo dentro del body</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium at, illum itaque laboriosam laudantium maiores omnis quaerat saepe soluta?</p>
+
+    <h3>Parrafo dentro de span</h3>
+    <span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae delectus dicta ducimus enim exercitationem ipsum minus nobis quaerat reprehenderit voluptate?</p>
+    </span>
+
+
+    <h3>Lista dentro de ul</h3>
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+    </ul>
+
+    <h3>Lista dentro de ol</h3>
+    <ol>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+    </ol>
+
+    <div>
+        <h3>parrafo afectado por el orden del borde, de solido a punteado</h3>
+        <span style="border: 2px yellow dotted;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aperiam aut cumque debitis delectus doloremque, ducimus ea expedita explicabo harum in laborum nihil, odio officia similique totam ullam veniam.</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etiquetas Estructurales</title>
+</head>
+<body>
+<!--header>h1>{Esto Es Un Encabezado}-->
+<header>
+    <h1>Esto Es Un Encabezado</h1>
+    <!--nav>ul>li*3>a-->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Servicios</a></li>
+        </ul>
+    </nav>
+</header>
+<!--main>h1{Contenido Prinpipal del Sitio}+p*3>lorem-->
+<main>
+    <h1>Contenido Prinpipal del Sitio</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem cumque distinctio excepturi in pariatur quibusdam quisquam quo reiciendis? Delectus eligendi eum, explicabo labore perferendis quaerat ut. Iusto, magni omnis?</p>
+    <p>Ab adipisci aspernatur consectetur deserunt distinctio eum id iusto maxime minima, officiis possimus quae qui quibusdam repellat repudiandae sunt tenetur ullam ut velit voluptas? Ad animi eligendi explicabo omnis voluptates!</p>
+    <p>Accusantium adipisci aliquid cumque deleniti dicta distinctio ea est fugit id laudantium libero non numquam odio officia perferendis placeat quam quasi quis quisquam recusandae repellendus, sit tenetur ut voluptas voluptates.</p>
+
+    <!--article>header>h1>{Encabezado del Articulo}-->
+    <article>
+        <header>
+            <h1>Encabezado del Articulo</h1>
+        </header>
+        <!--p>lorem15-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores labore, minus molestias placeat quae.</p>
+        <!--p>fig>img+figcaption-->
+        <p>
+            <figure><img src="../../images/a-phone-with-keyboard.jpg" alt="User avatar">
+                <figcaption>Publicado por <cite>Bill Clinton</cite> el
+                    <time datetime="2018-04-30T13:37Z">Lunes pasado</time>
+                </figcaption>
+            </figure>
+        </p>
+    </article>
+</main>
+
+<!--aside>h1{Calendario y Clima}+br+img+br-->
+<aside>
+    <h1>Calendario y Clima</h1>
+    <br>
+    <img src="../../images/calendar-and-weather.jpg" alt="Calendario" width="128">
+    <br>
+    Esto puede ser una ventana flotante del lado derecho o izquierdo de la pagina.
+</aside>
+
+<!--footer>p>small{Copyright © 2018 HTML5. All rights reserved. Hosted by Media Temple. Branding by Oliver Ker.}-->
+<footer role="contentinfo">
+    <p>
+        <small>Copyright © 2018 HTML5. All rights reserved. Hosted by Media Temple. Branding by Oliver Ker.</small>
+    </p>
+</footer>
+
+<!--
+Formas rapidas de crear divs con emmet
+div#contenedor[style]
+div#flotante.sidebar
+-->
+
+
+</body>
+</html>
